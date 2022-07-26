@@ -26,7 +26,6 @@
                          UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <wpfTestMultipleValidations:NotEmptyValidationRule ValidatesOnTargetUpdated="True" />
-                        <wpfTestMultipleValidations:NumericEntryValidationRule ValidatesOnTargetUpdated="True" />
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>
@@ -40,6 +39,7 @@
                 <Binding Path="TextInput2" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <wpfTestMultipleValidations:NotEmptyValidationRule ValidatesOnTargetUpdated="True" />
+                        <wpfTestMultipleValidations:NumericEntryValidationRule ValidatesOnTargetUpdated="True" />
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>
