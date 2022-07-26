@@ -37,5 +37,12 @@ namespace WpfTestMultipleValidations.Views
             InitializeComponent();
             DataContext = new TextBoxesViewModel();
         }
+
+        public TextBoxesView(string loadText)
+        {
+            InitializeComponent();
+            DataContext = new TextBoxesViewModel();
+            LoadText = loadText;
+        }
     }
 }
