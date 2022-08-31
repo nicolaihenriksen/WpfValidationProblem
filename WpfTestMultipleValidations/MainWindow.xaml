@@ -74,7 +74,13 @@
                     <ContentControl Margin="16"
                                     Content="{Binding Content, UpdateSourceTrigger=PropertyChanged, FallbackValue={x:Null}}"
                                     DataContext="{Binding SelectedView}"
-                                    DataContextChanged="OnSelectedViewChanged" />
+                                    DataContextChanged="OnSelectedViewChanged">
+                        <ContentControl.Resources>
+                            <DataTemplate DataType="{x:Type viewModels1:ChildView1ViewModel}">
+                                <views:ChildView1 />
+                            </DataTemplate>
+                        </ContentControl.Resources>
+                    </ContentControl>
                 </ScrollViewer>
 
             </Grid>

@@ -6,12 +6,12 @@ namespace Eol.UI.Wpf.ViewModels;
 
 public class ViewItem
 {
-    public FrameworkElement Content { get; }
+    public object Content { get; }
 
     public string Name { get; }
     public PackIconKind? IconKind { get; }
 
-    public ViewItem(string name, FrameworkElement contentType, PackIconKind? iconKind = null)
+    public ViewItem(string name, object contentType, PackIconKind? iconKind = null)
     {
         Name = name;
         IconKind = iconKind;

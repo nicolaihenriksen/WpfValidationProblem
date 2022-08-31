@@ -16,7 +16,7 @@ public class MainWindowViewModel : ViewModelBase
     {
         MenuItems = new ObservableCollection<ViewItem>(new[]
         {
-            new ViewItem("Child 1", new ChildView1(), PackIconKind.TestTube),
+            new ViewItem("Child 1", new ChildView1ViewModel(), PackIconKind.TestTube),
             new ViewItem("texts", new TextBoxesView("from navigation pane"), PackIconKind.Cogs),
         });
     }
