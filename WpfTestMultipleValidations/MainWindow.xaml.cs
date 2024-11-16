@@ -20,6 +20,7 @@ namespace WpfTestMultipleValidations
         private void OnSelectedViewChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             MainScrollViewer.ScrollToHome();
+            // Dummy commit to verify commit signing
         }
 
         private void UIElement_OnPreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
